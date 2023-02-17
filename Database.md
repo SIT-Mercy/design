@@ -34,9 +34,7 @@
 - [Integer] Pirce
 - [Boolean] Discount for poor student
 - [DateTime] Creation time
-- [String] Student ID of creator
-
-`Student ID of creator` might be replaced with its primary key in *Student List*
+- [Integer] creator of creator
 
 ## Table: Donation List
 - [Integer] Primary key: Generated ID
