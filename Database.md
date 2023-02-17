@@ -1,15 +1,24 @@
 # Database
 
+## Table: Student List
+- [Integer] Primary Key: Generated ID
+- [String] Student ID
+- [String] Name
+- [Boolean] Whether is poor student
+- [Integer] Current point
+
 ## Table: Point Changes
 - [Integer] Primary Key: Generated ID
 - [String] Student ID of subject
+- [String] Student ID of operator
 - [Integer] Point before change
 - [Integer] Point after change
 - [DateTime] Timestamp
-- [String] Student ID of operator
+
+`Student ID of subject` and `Student ID of operator` might be replaced with its primary key in *Student List*
 
 ## Table: Transcation Records
-- [Integer] primary key: Generated ID
+- [Integer] Primary key: Generated ID
 - [String] Student ID of subject
 - [String] Student ID of operator
 - [DateTime] Timestamp
@@ -19,12 +28,30 @@
 - [Integer] Original price
 - [Integer] Final price
 
+`Student ID of subject` and `Student ID of operator` might be replaced with its primary key in *Student List*
+
 ## Table: Item List
-- [Integer] primary key: Generated ID
+- [Integer] Primary key: Generated ID
 - [String] Name
 - [String] Description
 - [URL] Image URL
 - [Integer] Pirce
 - [Boolean] Discount for poor student
+- [DateTime] Creation time
 
-## Table: 
+## Table: Donation List
+- [Integer] Primary key: Generated ID
+- [String] Student ID of donator
+- [String] Content
+- [DateTime] Timestamp
+
+`Student ID of donator` might be replaced with its primary key in *Student List*
+
+## Table: Rental Records
+- [Integer] Primary key: Generated ID
+- [String] Student ID of borrower
+- [String] Student ID of operator
+- [DateTime] Deadline 
+- [DateTime] Timestamp
+
+`Student ID of borrower` and `Student ID of operator` might be replaced with its primary key in *Student List*
