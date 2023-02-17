@@ -9,26 +9,22 @@
 
 ## Table: Point Changes
 - [Integer] Primary Key: Generated ID
-- [String] Student ID of subject
-- [String] Student ID of operator
+- [Integer] Key of subject
+- [Integer] Key of operator
 - [Integer] Point before change
 - [Integer] Point after change
 - [DateTime] Timestamp
 
-`Student ID of subject` and `Student ID of operator` might be replaced with its primary key in *Student List*
-
 ## Table: Transcation Records
 - [Integer] Primary key: Generated ID
-- [String] Student ID of subject
-- [String] Student ID of operator
+- [Integer] Key of subject
+- [Integer] Key of operator
 - [DateTime] Timestamp
 - [Integer] Key of item
 - [Integer] Amount of item
 - [Decimal] Discount factor
 - [Integer] Original price
 - [Integer] Final price
-
-`Student ID of subject` and `Student ID of operator` might be replaced with its primary key in *Student List*
 
 ## Table: Item List
 - [Integer] Primary key: Generated ID
@@ -44,29 +40,23 @@
 
 ## Table: Donation List
 - [Integer] Primary key: Generated ID
-- [String] Student ID of donator
+- [Integer] Key of donator
 - [String] Content
 - [DateTime] Timestamp
 
-`Student ID of donator` might be replaced with its primary key in *Student List*
-
 ## Table: Rental Records
 - [Integer] Primary key: Generated ID
-- [String] Student ID of borrower
-- [String] Student ID of operator
+- [Integer] Key of borrower
+- [Integer] Key of operator
 - [String] Phone number of borrower
 - [DateTime] Deadline
 - [DateTime] Timestamp
 
-`Student ID of borrower` and `Student ID of operator` might be replaced with its primary key in *Student List*
-
 ## Table: Gift Records
 - [Integer] Primary key: Generated ID
-- [String] Student ID of receiver
-- [String] Student ID of operator
+- [Integer] Key of receiver
+- [Integer] Key of operator
 - [String] Phone number of receiver
 - [Integer] Key of item
 - [Integer] Amount of item
 - [DateTime] Timestamp
-
-`Student ID of receiver` and `Student ID of operator` might be replaced with its primary key in *Student List*
