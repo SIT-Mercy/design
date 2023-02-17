@@ -1,0 +1,62 @@
+# 慈善爱心屋
+使用学号代表一个unique同学。
+
+## 入库
+指任何物品进入慈善爱心屋房间(inventory)内，例如可从仓库(repository)加入。
+需要管理员(admin)操作。
+
+## 兑换(redeem)
+1. 输入学号，查询列表——可兑换，不可兑换
+2. 选择好兑换的物品，通过名称查询物品(item)信息
+3. 成功兑换，扣除积分，记录操作员(operator)。
+
+## 出借(lend)
+- 分类：需要积分，无需积分
+- 信息：租借人学号，物品信息，归还日期(deadline)
+- 归还日期：根据类型自动选择：跳过双修日；手动设置。
+- 操作员(operator)
+
+## 自动填充(auto completion)
+- 记录最近几次的交易人员，方便多次交易间填充。
+
+## Extra
+1. 记录剪切板历史记录——学号
+
+## 交易记录(Transcation Record)
+1. 主体(subject)，学号(student ID)作为ID
+2. 手机号(phone number)
+3. 备注(note)
+4. 物品(item)和数量(amount)
+5. 操作员(operator)
+6. 时间戳(timestamp)
+
+## 积分改变(Point Change)
+1. 交易前积分(point before)，交易后积分(point after)
+2. 学号
+3. 时间戳(timestamp)
+4. 操作员
+
+### 来源
+1. 消耗积分兑换物品。
+2. 消耗积分租借物品。
+3. 通过志愿活动获得积分。
+4. 直接修改积分。
+
+### 结构
+1. 
+
+## 交易(Transcation)
+1. 主体(subject)，学号(student ID)作为ID
+2. 手机号(phone number)
+3. 物品(item),物品价格(point cost)
+4. 数量(amount)
+5. 线性因子(factor)，用于打折，计算得到结果
+6. 操作员(operator)
+
+## 积分(Point)
+1. primary key: 学号(student ID)
+2. 积分(point)
+
+## 
+
+罗健
