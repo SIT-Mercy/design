@@ -1,6 +1,12 @@
 # 慈善爱心屋
 使用学号代表一个unique同学。
 
+## 操作员(operator)
+1. 交易操作员(transcation operator)
+2. 积分操作员(point operator)
+3. 管理员(admin)
+4. 系统(system)
+
 ## 入库
 指任何物品进入慈善爱心屋房间(inventory)内，例如可从仓库(repository)加入。
 需要管理员(admin)操作。
@@ -24,11 +30,10 @@
 
 ## 交易记录(Transcation Record)
 1. 主体(subject)，学号(student ID)作为ID
-2. 手机号(phone number)
-3. 备注(note)
-4. 物品(item)和数量(amount)
-5. 操作员(operator)
-6. 时间戳(timestamp)
+2. 备注(note)
+3. 物品(item)和数量(amount)
+4. 操作员(operator)
+5. 时间戳(timestamp)
 
 ## 积分改变(Point Change)
 1. 交易前积分(point before)，交易后积分(point after)
@@ -37,13 +42,11 @@
 4. 操作员
 
 ### 来源
-1. 消耗积分兑换物品。
-2. 消耗积分租借物品。
-3. 通过志愿活动获得积分。
-4. 直接修改积分。
-
-### 结构
-1. 
+1. 消耗积分兑换物品
+2. 消耗积分租借物品
+3. 通过志愿活动获得积分
+4. 直接修改积分
+5. 贫困生每年自动扣分
 
 ## 交易(Transcation)
 1. 主体(subject)，学号(student ID)作为ID
