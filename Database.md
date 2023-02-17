@@ -38,6 +38,9 @@
 - [Integer] Pirce
 - [Boolean] Discount for poor student
 - [DateTime] Creation time
+- [String] Student ID of creator
+
+`Student ID of creator` might be replaced with its primary key in *Student List*
 
 ## Table: Donation List
 - [Integer] Primary key: Generated ID
@@ -51,7 +54,19 @@
 - [Integer] Primary key: Generated ID
 - [String] Student ID of borrower
 - [String] Student ID of operator
-- [DateTime] Deadline 
+- [String] Phone number of borrower
+- [DateTime] Deadline
 - [DateTime] Timestamp
 
 `Student ID of borrower` and `Student ID of operator` might be replaced with its primary key in *Student List*
+
+## Table: Gift Records
+- [Integer] Primary key: Generated ID
+- [String] Student ID of receiver
+- [String] Student ID of operator
+- [String] Phone number of receiver
+- [Integer] Key of item
+- [Integer] Amount of item
+- [DateTime] Timestamp
+
+`Student ID of receiver` and `Student ID of operator` might be replaced with its primary key in *Student List*
