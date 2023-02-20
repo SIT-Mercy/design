@@ -1,6 +1,7 @@
 # Database
 
 ## Table: Student List
+
 - [Integer] Primary Key: Generated ID
 - [String] Student ID
 - [String] Name
@@ -8,6 +9,7 @@
 - [Integer] Current point
 
 ## Table: Point Changes
+
 - [Integer] Primary Key: Generated ID
 - [Integer] Key of subject
 - [Integer] Key of operator
@@ -16,6 +18,7 @@
 - [DateTime] Timestamp
 
 ## Table: Transcation Records
+
 - [Integer] Primary key: Generated ID
 - [Integer] Key of subject
 - [Integer] Key of operator
@@ -27,6 +30,7 @@
 - [Integer] Final price
 
 ## Table: Item List
+
 - [Integer] Primary key: Generated ID
 - [String] Name
 - [String] Description
@@ -37,12 +41,14 @@
 - [Integer] creator of creator
 
 ## Table: Donation List
+
 - [Integer] Primary key: Generated ID
 - [Integer] Key of donator
 - [String] Content
 - [DateTime] Timestamp
 
 ## Table: Rental Records
+
 - [Integer] Primary key: Generated ID
 - [Integer] Key of borrower
 - [Integer] Key of operator
@@ -51,6 +57,7 @@
 - [DateTime] Timestamp
 
 ## Table: Gift Records
+
 - [Integer] Primary key: Generated ID
 - [Integer] Key of receiver
 - [Integer] Key of operator
