@@ -1,4 +1,4 @@
-# Permission
+# Authorization
 
 ## Table: Opearator List
 
