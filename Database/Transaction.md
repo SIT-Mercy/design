@@ -1,4 +1,4 @@
-# Database
+# Transaction
 
 ## Table: Student List
 
@@ -38,7 +38,7 @@
 - [Integer] Pirce
 - [Boolean] Discount for poor student
 - [DateTime] Creation time
-- [Integer] creator of creator
+- [Integer] Key of creator
 
 ## Table: Donation List
 
