@@ -29,6 +29,8 @@
 
 ## Table: Transaction Records
 
+For gift records, price is 0.
+
 - [Integer] Primary key: Generated ID
 - [Integer] Key(Student List) of customer
 - [Integer] Key(Staff List) of operator
@@ -83,13 +85,3 @@
 - [DateTime] Deadline
 - [DateTime] Creation time
 - [DateTime?] Return time // null for not yet returned
-
-## Table: Gift Records
-
-- [Integer] Primary key: Generated ID
-- [Integer] Key(Student List) of receiver
-- [Integer] Key(Staff List) of operator
-- [String] Phone number of receiver
-- [Integer] Key(Item List) of item
-- [Integer] Amount of item
-- [DateTime] Creation Time
