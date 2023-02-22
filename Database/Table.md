@@ -27,15 +27,14 @@
 - [Integer] Point after change
 - [DateTime] Creation Time
 
-## Table: Transcation Records
+## Table: Transaction Records
 
 - [Integer] Primary key: Generated ID
-- [Integer] Key(Student List) of subject
+- [Integer] Key(Student List) of customer
 - [Integer] Key(Staff List) of operator
 - [DateTime] Creation Time
 - [Integer] Key(Item List) of item
 - [Integer] Amount of item
-- [Decimal] Discount factor
 - [Integer] Original price // the forzeen price from item
 - [Integer] Final price
 
@@ -63,7 +62,7 @@
 - [Integer] Amount before
 - [Integer] Amount after
 - [DateTime] Creation time
-- [String?] Reason: such as `redeemed`, `rented`, `missing` or null.
+- [String?] Reason: such as `redeemed`, `rented`,`missing` or null.
 
 ## Table: Donation List
 
