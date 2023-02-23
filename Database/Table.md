@@ -1,22 +1,24 @@
 # Database
 
+`mutable` means mutable data.
+
 ## Table: Staff List
 
 - [Integer] Primary Key: Generated ID
 - [Integer] Key(Student List)
-- [String] Password
-- [String] Authority: such as `Transaction Operator`, `Admin`
-- [DateTime] Last login time
+- [String] [mutable] Password
+- [String] [mutable] Authority: such as `Transaction Operator`, `Admin`
+- [DateTime] [mutable] Last login time
 
 ## Table: Student List
 
 - [Integer] Primary Key: Generated ID
 - [String] Student ID
-- [String] Name
-- [String] College
-- [Short] poor level: `not poor`, `poor`, `very poor`.
-- [String?] Phone number // null for not yet recorded
-- [Integer] Current point
+- [String] [mutable] Name
+- [String] [mutable] College
+- [Short] [mutable] poor level: `not poor`, `poor`, `very poor`.
+- [String?] [mutable] Phone number // null for not yet recorded
+- [Integer] [mutable] Current point
 
 ## Table: Point Changes
 
@@ -45,13 +47,13 @@ For gift records, price is 0.
 ## Table: Item List
 
 - [Integer] Primary key: Generated ID
-- [String] Name
-- [String] Description
-- [String?] Internal note // only for staff
-- [Integer] Amount in stock
-- [Integer?] Price  // null if not for sale
-- [Integer?] Rent   // null if not rentable
-- [Decimal] price factor for poor student
+- [String] [mutable] Name
+- [String] [mutable] Description
+- [String?] [mutable] Internal note // only for staff
+- [Integer] [mutable] Amount in stock
+- [Integer?] [mutable] Price  // null if not for sale
+- [Integer?] [mutable] Rent   // null if not rentable
+- [Decimal] [mutable] price factor for poor student
 - [DateTime] Creation time
 
 ## Table: Item Amount Changes
@@ -86,7 +88,7 @@ For gift records, price is 0.
 - [Integer] Key(Item List) of item
 - [Sting] Name // might be different from the actually borrower
 - [String] Phone number // might be different from the actually borrower
-- [Json] Renewal list
+- [Json] [mutable] Renewal list
 
   ```json
   [
@@ -97,6 +99,6 @@ For gift records, price is 0.
   ]
   ```
 
-- [DateTime] Deadline
+- [DateTime] [mutable] Deadline
 - [DateTime] Creation time
-- [DateTime?] Return time // null for not yet returned
+- [DateTime?] [mutable] Return time // null for not yet returned
