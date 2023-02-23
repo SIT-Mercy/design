@@ -46,12 +46,11 @@ For gift records, price is 0.
 - [Integer] Primary key: Generated ID
 - [String] Name
 - [String] Description
+- [String?] Internal note // only for staff
 - [Integer] Amount in stock
-- [Integer] Price
-- [Integer] Rent
-- [Boolean] Has discount for poor student
-- [Boolean] Rentable
-- [Boolean] For sale
+- [Integer?] Price  // null if not for sale
+- [Integer?] Rent   // null if not rentable
+- [Decimal] discount factor for poor student
 - [DateTime] Creation time
 
 ## Table: Item Amount Changes
@@ -61,13 +60,14 @@ For gift records, price is 0.
   - `redeemed` for Transcation Records;
   - `rented` for Rental Records;
   - `returned` for Rental Records;
+  - `ownUse`for internal consumption.
   - null for nothing related
 - [Integer] Key(Item List) of item
 - [Integer] Amount before
 - [Integer] Amount after
 - [DateTime] Creation time
 - [String?] Note
-- [String?] Reason: such as `redeemed`, `rented`,`missing` or null.
+- [String?] Reason: such as `redeemed`, `rented`,`missing`, `ownUse` or null.
 
 ## Table: Donation List
 
@@ -85,6 +85,17 @@ For gift records, price is 0.
 - [Integer] Key(Item List) of item
 - [Sting] Name // might be different from the actually borrower
 - [String] Phone number // might be different from the actually borrower
+- [Json] Renewal list
+
+  ```json
+  [
+    {
+      "from":"yyyy-MM-dd-hh:mm:ss",
+      "to":"yyyy-MM-dd-hh:mm:ss,
+    }
+  ]
+  ```
+
 - [DateTime] Deadline
 - [DateTime] Creation time
 - [DateTime?] Return time // null for not yet returned
