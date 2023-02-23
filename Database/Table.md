@@ -38,7 +38,6 @@ For gift records, price is 0.
 - [DateTime] Creation Time
 - [Integer] Key(Item List) of item
 - [Integer] Amount of item
-- [Integer] Total price
 - [Integer] Unit price
 - [Decimal] price factor
 - [Integer] Final total price
