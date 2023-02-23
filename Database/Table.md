@@ -49,7 +49,7 @@ For gift records, price is 0.
 - [Integer] Primary key: Generated ID
 - [String] [mutable] Name
 - [String] [mutable] Description
-- [String?] [mutable] Internal note // only for staff
+- [String?] [mutable] Internal notes // only for staff
 - [Integer] [mutable] Amount in stock
 - [Integer?] [mutable] Price  // null if not for sale
 - [Integer?] [mutable] Rent   // null if not rentable
@@ -69,7 +69,7 @@ For gift records, price is 0.
 - [Integer] Amount before
 - [Integer] Amount after
 - [DateTime] Creation time
-- [String?] Note
+- [String?] Notes
 - [String?] Reason: such as `redeemed`, `rented`,`missing`, `ownUse` or null.
 
 ## Table: Donation List
@@ -77,7 +77,7 @@ For gift records, price is 0.
 - [Integer] Primary key: Generated ID
 - [Integer] Key(Student List) of donator
 - [Integer] Key(Staff List) of operator
-- [String] Note
+- [String] Notes
 - [DateTime] Creation Time
 
 ## Table: Rental Records
