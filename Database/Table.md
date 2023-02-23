@@ -13,7 +13,8 @@
 - [Integer] Primary Key: Generated ID
 - [String] Student ID
 - [String] Name
-- [Boolean] is poor student
+- [String] College
+- [Short] poor level: `not poor`, `poor`, `very poor`.
 - [String?] Phone number // null for not yet recorded
 - [Integer] Current point
 
@@ -59,11 +60,13 @@ For gift records, price is 0.
 - [Integer?] Key of related table:
   - `redeemed` for Transcation Records;
   - `rented` for Rental Records;
+  - `returned` for Rental Records;
   - null for nothing related
 - [Integer] Key(Item List) of item
 - [Integer] Amount before
 - [Integer] Amount after
 - [DateTime] Creation time
+- [String?] Note
 - [String?] Reason: such as `redeemed`, `rented`,`missing` or null.
 
 ## Table: Donation List
