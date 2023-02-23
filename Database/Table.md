@@ -38,8 +38,10 @@ For gift records, price is 0.
 - [DateTime] Creation Time
 - [Integer] Key(Item List) of item
 - [Integer] Amount of item
-- [Integer] Original price // the forzeen price from item
-- [Integer] Final price
+- [Integer] Total price
+- [Integer] Unit price
+- [Decimal] price factor
+- [Integer] Final total price
 
 ## Table: Item List
 
@@ -50,7 +52,7 @@ For gift records, price is 0.
 - [Integer] Amount in stock
 - [Integer?] Price  // null if not for sale
 - [Integer?] Rent   // null if not rentable
-- [Decimal] discount factor for poor student
+- [Decimal] price factor for poor student
 - [DateTime] Creation time
 
 ## Table: Item Amount Changes
